@@ -17,9 +17,9 @@ export default function Footer() {
             © {new Date().getFullYear()} Aurum Estate Group. All rights reserved. Licensed in NY, CA, FL & CO.
           </p>
           <div className="flex gap-6 text-xs tracking-widest text-stone-500 uppercase">
-            <a href="#" className="hover-gold transition-colors">Privacy</a>
-            <a href="#" className="hover-gold transition-colors">Terms</a>
-            <a href="#" className="hover-gold transition-colors">Sitemap</a>
+            <a href="#properties" className="hover-gold transition-colors">Privacy</a>
+            <a href="#about" className="hover-gold transition-colors">Terms</a>
+            <a href="#contact" className="hover-gold transition-colors">Sitemap</a>
           </div>
         </div>
       </div>
