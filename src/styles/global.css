@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+/* ─── Base ─── */
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: #ffffff;
+  color: #1c1917;
+}
+
+.font-display { font-family: 'Cormorant Garamond', serif; }
+
+/* ─── Brand Colors ─── */
+.gold             { color: #B8892A; }
+.bg-gold          { background-color: #B8892A; }
+.border-gold      { border-color: #B8892A; }
+.hover-gold:hover { color: #B8892A; }
+
+/* ─── Nav underline ─── */
+.nav-link { position: relative; }
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; left: 0;
+  width: 0; height: 1px;
+  background: #B8892A;
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after { width: 100%; }
+
+/* ─── Card hover ─── */
+.card-hover {
+  transition: transform 0.4s cubic-bezier(0.25,0.46,0.45,0.94), box-shadow 0.4s ease;
+}
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 56px rgba(0,0,0,0.10);
+}
+
+/* ─── Image zoom ─── */
+.img-zoom img { transition: transform 0.7s cubic-bezier(0.25,0.46,0.45,0.94); }
+.img-zoom:hover img { transform: scale(1.06); }
+
+/* ─── Scroll reveal ─── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  animation: fadeUp 0.75s ease forwards;
+}
+@keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+.delay-1 { animation-delay: 0.15s; }
+.delay-2 { animation-delay: 0.3s; }
+.delay-3 { animation-delay: 0.45s; }
+.delay-4 { animation-delay: 0.6s; }
+
+/* ─── Hero text ─── */
+.hero-text {
+  animation: heroReveal 1.1s cubic-bezier(0.25,0.46,0.45,0.94) forwards;
+  opacity: 0;
+}
+@keyframes heroReveal {
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── Modal ─── */
+.modal-backdrop { animation: fadeIn 0.2s ease; }
+.modal-box      { animation: slideUp 0.32s cubic-bezier(0.25,0.46,0.45,0.94); }
+@keyframes fadeIn  { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideUp { from { opacity: 0; transform: translateY(36px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ─── Badge ─── */
+.status-badge {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar       { width: 4px; }
+::-webkit-scrollbar-track { background: #f5f5f4; }
+::-webkit-scrollbar-thumb { background: #B8892A; border-radius: 2px; }
+
+/* ─── Inputs ─── */
+input::placeholder, textarea::placeholder { color: #a8a29e; }
+select option { background-color: #ffffff; color: #1c1917; }
