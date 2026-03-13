@@ -40,11 +40,7 @@ export default function PropertiesSection() {
           </div>
         )}
 
-        <div className="mt-12 text-center reveal">
-          <button className="border border-stone-300 text-stone-600 text-sm tracking-widest uppercase px-10 py-4 hover:border-amber-400 hover:text-amber-700 transition-all duration-300 bg-white">
-            Load More Properties
-          </button>
-        </div>
+        
       </section>
 
       <PropertyModal property={selectedProperty} onClose={() => setSelectedProperty(null)} />

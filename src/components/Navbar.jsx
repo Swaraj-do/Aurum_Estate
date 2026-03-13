@@ -42,15 +42,7 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Desktop CTA */}
-        <div className="hidden md:flex items-center gap-4">
-          <button className={`text-sm tracking-widest uppercase transition-colors hover-gold ${scrolled ? "text-stone-600" : "text-white/90"}`}>
-            Sign In
-          </button>
-          <button className="bg-gold text-white text-sm font-medium tracking-widest uppercase px-5 py-2.5 hover:bg-amber-700 transition-colors duration-300">
-            List Property
-          </button>
-        </div>
+        
 
         {/* Hamburger */}
         <button className={`md:hidden transition-colors ${scrolled ? "text-stone-700" : "text-white"}`}
@@ -73,9 +65,7 @@ export default function Navbar() {
               {link}
             </a>
           ))}
-          <button className="bg-gold text-white text-sm font-semibold tracking-widest uppercase px-5 py-3 text-center hover:bg-amber-700 transition-colors">
-            List Property
-          </button>
+          
         </div>
       )}
     </nav>
