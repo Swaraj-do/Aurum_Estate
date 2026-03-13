@@ -6,7 +6,7 @@ A fully responsive, production-ready luxury real estate frontend built with **Re
 
 ## 🌐 Live Demo
 
-> Coming soon / [Add your deployed link here after hosting on Vercel or Netlify]
+[🔗 Live Demo](https://aurum-estate-ko7y.vercel.app)
 
 ---
 
